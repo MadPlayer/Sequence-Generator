@@ -25,3 +25,4 @@ find_package(Clang REQUIRED CONFIG)
 
 
 add_subdirectory(src)
+add_subdirectory(visitor)
