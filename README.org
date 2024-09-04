@@ -1,0 +1,11 @@
+#+TITLE: Sequence Diagram Generator for C++ with LLVM library
+#+AUTHOR: Chang-Hui Kim
+#+email: kch9001@gmail.com
+* Current State
+- Prototyping for llvm api
+- Specify requirements
+  - User Input: some class method
+  - Parse C++ code and generate plantuml file
+  - Support basic C++ statements: method call, if-else, switch, while, for ... etc
+  - Support a variety of callback types and call them
+  - Support ignore list: ex) ignore std method call
