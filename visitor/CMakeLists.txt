@@ -28,3 +28,18 @@ target_link_libraries(astimporter-demo
   clangSerialization
   clangTooling
   )
+
+add_executable(deme
+  ASTMerger.cc
+  ProtoVisitor.cc
+  )
+target_link_libraries(deme
+  PRIVATE
+  LLVMSupport
+  clangAST
+  clangASTMatchers
+  clangBasic
+  clangFrontend
+  clangSerialization
+  clangTooling
+  )
