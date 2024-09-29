@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
 
-project(clang-tidy-plugins LANGUAGES C CXX)
+project(SequenceGenerator LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_EXPORT_COMPILE_COMMANDS on)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 option(BUILD_WARNINGS "Build with project's warnings setting" ON)
 option(BUILD_WARNING_AS_ERROR "Build with warning as error" ON)
@@ -18,11 +19,11 @@ if(BUILD_WARNING_AS_ERROR)
     endif()
 endif()
 
-
-enable_testing()
 find_package(LLVM REQUIRED CONFIG)
 find_package(Clang REQUIRED CONFIG)
 
+enable_testing()
 
 add_subdirectory(src)
 add_subdirectory(visitor)
+add_subdirectory(test)
