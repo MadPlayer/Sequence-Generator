@@ -19,8 +19,12 @@ if(BUILD_WARNING_AS_ERROR)
     endif()
 endif()
 
+add_compile_options(-fno-rtti)
+
 find_package(LLVM REQUIRED CONFIG)
 find_package(Clang REQUIRED CONFIG)
+
+include_directories(include)
 
 enable_testing()
 

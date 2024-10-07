@@ -31,7 +31,17 @@ void ClassA::callB() {
 }
 
 void ClassA::interMethod1() {
+  bool inter1 = false;
+  if (inter1)
+    {
+      //  do nothing
+    }
 }
 
 void ClassA::interMethod2() {
+  bool inter2 = true;
+  if (inter2)
+    {
+      // do nothing
+    }
 }
