@@ -10,6 +10,7 @@ include_directories(PRIVATE
 add_executable(main
   main.cc
   ProtoVisitor.cc
+  MethodScrapper.cc
   )
 
 target_link_libraries(main
